@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;background:#eef6fb;color:#36404a}
+body{display:flex;justify-content:center}
+.wrap{width:min(100%,900px);padding:18px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.title{font-size:22px;font-weight:800}
+.stats{display:flex;gap:14px;font-size:14px}
+.stats span{background:#fff;border-radius:999px;padding:7px 11px;box-shadow:0 3px 12px #0000000d}
+.game{position:relative;width:100%;height:min(72vh,680px);min-height:440px;overflow:hidden;border-radius:22px;background:#dff2ff url("images/background.svg") center/cover no-repeat;box-shadow:0 12px 35px #00000018;touch-action:none}
+.player{position:absolute;z-index:5;width:clamp(105px,16vw,155px);height:auto;left:50%;bottom:18px;transform:translateX(-50%);user-select:none;pointer-events:none}
+.bird{position:absolute;z-index:4;width:64px;height:54px;user-select:none;pointer-events:none;filter:drop-shadow(0 5px 3px #0002)}
+.overlay{position:absolute;z-index:20;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:25px;background:#ffffffb8;backdrop-filter:blur(3px)}
+.overlay h1{margin:0 0 8px;font-size:32px}
+.overlay p{margin:0 0 20px;max-width:430px;line-height:1.6}
+button{border:0;font:inherit;cursor:pointer}
+#startBtn{padding:12px 24px;border-radius:999px;background:#fff;box-shadow:0 5px 18px #0002;font-weight:800}
+.controls{display:flex;justify-content:center;gap:18px;margin-top:12px}
+.move{width:82px;height:48px;border-radius:16px;background:#fff;box-shadow:0 4px 14px #0001;font-size:25px}
+.hint{text-align:center;font-size:13px;color:#69757e;margin:10px 0 0}
+@media(max-width:600px){.wrap{padding:10px}.title{font-size:18px}.stats{font-size:12px;gap:6px}.game{min-height:470px;height:70vh}.bird{width:58px;height:49px}}

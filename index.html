@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>오목눈이 피하기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <div class="title">오목눈이 피하기</div>
+      <div class="stats">
+        <span>점수 <b id="score">0</b></span>
+        <span>시간 <b id="time">0.0</b>s</span>
+      </div>
+    </div>
+
+    <section id="game" class="game" aria-label="게임 화면">
+      <img id="player" class="player" src="images/character.png" alt="캐릭터">
+      <div id="overlay" class="overlay">
+        <h1 id="overlayTitle">오목눈이 피하기</h1>
+        <p id="overlayText">떨어지는 하얀 오목눈이를 피해 들판을 달려보자</p>
+        <button id="startBtn">게임 시작</button>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button class="move" data-dir="-1">←</button>
+      <button class="move" data-dir="1">→</button>
+    </div>
+    <p class="hint">키보드 ← → 또는 A / D로 이동할 수 있어. 모바일에서는 아래 버튼을 눌러줘.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
