@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#dff2ff"/><stop offset="1" stop-color="#f8fbff"/>
+  </linearGradient>
+  <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#cfe9b6"/><stop offset="1" stop-color="#a8cf91"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<circle cx="1010" cy="125" r="58" fill="#fff7cf" opacity=".85"/>
+<g fill="#fff" opacity=".75">
+  <ellipse cx="180" cy="145" rx="85" ry="28"/><ellipse cx="250" cy="140" rx="55" ry="24"/>
+  <ellipse cx="780" cy="185" rx="95" ry="30"/><ellipse cx="850" cy="180" rx="55" ry="24"/>
+</g>
+<path d="M0 430 Q180 365 360 430 T720 425 T1200 420 V800 H0Z" fill="url(#field)"/>
+<path d="M0 520 Q220 455 430 520 T860 510 T1200 515 V800 H0Z" fill="#9fc886" opacity=".75"/>
+<g stroke="#709b68" stroke-width="5" stroke-linecap="round" opacity=".7">
+  <path d="M80 650 l-8 -40 M82 650 l18 -34 M170 590 l-5 -38 M172 590 l18 -30 M1040 625 l-6 -42 M1042 625 l18 -33"/>
+</g>
+<g fill="#fff7fb" opacity=".9">
+  <circle cx="125" cy="555" r="7"/><circle cx="137" cy="548" r="5"/><circle cx="1100" cy="570" r="7"/><circle cx="1113" cy="563" r="5"/>
+</g>
+</svg>
